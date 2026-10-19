@@ -16,7 +16,7 @@
             <div class="brand-subtitle">Management</div>
         </div>
     </div>
-
+    <div class="nav-class">
     <nav class="main-nav" aria-label="Main navigation">
         <a href="index.php">Dashboard</a>
         <a href="/Indomaret_RPL4/products/list.php">Products</a>
@@ -24,6 +24,7 @@
         <a href="/RPL4_indomaret/donations/list.php">Donations</a>
         <a href="/RPL4_indomaret/transactions/list.php">Transactions</a>
     </nav>
+    </div>
 
     <div class="user-badge">Admin</div>
 </header>
