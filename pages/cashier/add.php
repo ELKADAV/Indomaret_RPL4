@@ -12,12 +12,15 @@ include ROOTPATH . '/includes/header.php';
      <title>Document</title>
 </head>
 <body>
+<center style="margin-top: 50px;">
+<h1>Tambah Data Kasir</h1>
 
-<form action="" method="post"></form>
+<form action="/Indomaret_RPL4/transactions/process/cashier_process.php" method="post"></form>
      <label for="">
      <input type="text" name="nama_kasir" placeholder="Nama Kasir" require>
      </label>
      <input type="text" name="no_telp" placeholder="No Telp" require>
      <input type="text" name="alamat" placeholder="Alamat" require>
+     <input type="button" value="">
      </body>
 </html>
