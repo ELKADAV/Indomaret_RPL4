@@ -21,6 +21,6 @@ include ROOTPATH . '/includes/header.php';
      </label>
      <input type="text" name="no_telp" placeholder="No Telp" require>
      <input type="text" name="alamat" placeholder="Alamat" require>
-     <input type="button" value="">
+     <input type="button" value="" name="Kirim">
      </body>
 </html>
