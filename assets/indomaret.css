@@ -11,3 +11,11 @@
     height: 20px;
     background-color: black;
 }
+form {
+    display: flex;
+    flex-direction: column; /* Mengubah arah menjadi menurun */
+    gap: 10px;           
+}
+input {
+    color: black;
+}
