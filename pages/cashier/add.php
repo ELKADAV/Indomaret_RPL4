@@ -13,7 +13,7 @@ include ROOTPATH . '/includes/header.php';
 </head>
 <body>
 <center style="margin-top: 50px;">
-<h1>Tambah Data Kasir</h1>
+<h1 style="color: black">Tambah Data Kasir</h1>
 
 <form action="/Indomaret_RPL4/transactions/process/cashier_process.php" method="post"></form>
      <label for="">
