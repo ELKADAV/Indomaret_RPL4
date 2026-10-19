@@ -9,13 +9,6 @@
 <body>
     
 <header class="site-header">
-    <div class="brand-wrap">
-        <div class="brand-mark">I</div>
-        <div>
-            <div class="brand-name">Indomaret</div>
-            <div class="brand-subtitle">Management</div>
-        </div>
-    </div>
     <div class="nav-class">
     <nav class="main-nav" aria-label="Main navigation">
         <a href="index.php">Dashboard</a>
