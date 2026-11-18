@@ -7,20 +7,15 @@
     <link rel="stylesheet" href="/Indomaret_RPL4/assets/indomaret.css">
 </head>
 <body>
+    <div class="nav-conatiner>
     
-<header class="site-header">
-    <div class="nav-class">
-    <nav class="main-nav" aria-label="Main navigation">
         <a href="index.php">Dashboard</a>
         <a href="/Indomaret_RPL4/products/list.php">Products</a>
         <a href="/RPL4_indomaret/pages/cashiers/list.php">Cashiers</a>
         <a href="/RPL4_indomaret/donations/list.php">Donations</a>
         <a href="/RPL4_indomaret/transactions/list.php">Transactions</a>
-    </nav>
-    </div>
+        </div>
 
-    <div class="user-badge">Admin</div>
-</header>
 
 </body>
 </html>
