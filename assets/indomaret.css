@@ -3,6 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
     color: aliceblue;
+    border: 2px solid black;
+    border-radius: 3px;
 }
 .site-header {
     display: flex;
