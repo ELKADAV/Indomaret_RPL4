@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/RPL4_Indomaret/assets/css/indomaret.css">
+    <title>Daftar Produk - Indomaret</title>
+    <!-- Perbaikan nama folder proyek dari RPL4_Indomaret menjadi Indomaret_RPL4 -->
+    <link rel="stylesheet" href="/Indomaret_RPL4/assets/css/indomaret.css">
 </head>
 
 <body>
     <?php
     // Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
-    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
+    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
     include ROOTPATH . '/includes/header.php';
+    
+    // Memanggil config.php menggunakan ROOTPATH yang sudah didefinisikan di atas
+    require_once ROOTPATH . '/config/config.php';
     ?>
 
-    <h2>Daftar Pengguna Sistem</h2>
+    <h2>Daftar Produk</h2>
 
     <!-- Pembungkus Tabel Berfungsi untuk Responsivitas Mobile -->
     <div class="table-container">
@@ -30,16 +34,17 @@
             </thead>
             <tbody>
                 <?php
-                include '../../config/config.php';
-                $query = "SELECT * FROM tabel_produk";
+                $query = "SELECT * FROM table_produk";
                 $result = mysqli_query($connection, $query);
                 $no = 1;
+
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>";
                     echo "<td>" . $no++ . "</td>";
-                    echo "<td>" . htmlspecialchars($row['nama_kasir']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['no_telp']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['alamat']) . "</td>";
+                    // Sesuaikan nama kolom di bawah ini dengan struktur di database Anda
+                    echo "<td>" . htmlspecialchars($row['nama_produk']) . "</td>";
+                    echo "<td>Rp " . number_format($row['harga_produk'], 0, ',', '.') . "</td>";
+                    echo "<td>" . htmlspecialchars($row['diskon']) . "%</td>";
                     echo "</tr>";
                 }
                 ?>
