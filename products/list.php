@@ -34,7 +34,7 @@
             </thead>
             <tbody>
                 <?php
-                $query = "SELECT * FROM table_produk";
+                $query = "SELECT * FROM tabel_produk";
                 $result = mysqli_query($connection, $query);
                 if (!$result) {
     die("Query Error: " . mysqli_error($connection));
