@@ -36,6 +36,9 @@
                 <?php
                 $query = "SELECT * FROM table_produk";
                 $result = mysqli_query($connection, $query);
+                if (!$result) {
+    die("Query Error: " . mysqli_error($connection));
+}
                 $no = 1;
 
                 while ($row = mysqli_fetch_assoc($result)) {
