@@ -20,7 +20,7 @@
   </thead>
   <tbody>
     <?php
-                include 'config.php';
+                include 'Indomaret_RPL4/config.php';
                 $query = "SELECT * FROM tabel_produk";
                 $result = mysqli_query($connection, $query);
                 $no = 1;
