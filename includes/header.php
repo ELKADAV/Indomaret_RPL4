@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/Indomaret_RPL4/assets/indomaret.css">
 </head>
 <body>
-    <div class="nav-conatiner>
+    <div class="nav-container>
     
         <a href="index.php">Dashboard</a>
         <a href="/Indomaret_RPL4/products/list.php">Products</a>
