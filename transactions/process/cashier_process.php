@@ -1,6 +1,7 @@
 <?php
 
-include '../config/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4/config/config.php';
+
 var_dump($_POST);
 die();
 
@@ -53,7 +54,7 @@ if($_POST["action"] == "add"){
     } else {
         echo "<script>
         alert('Data kasir berhasil dihapus.');
-        window.location.href='../pages/cashiers/list.php';
+        window.location.href='/Indomaret_RPL4/pages/cashier/list.php';
         </script>";
     }
 }
