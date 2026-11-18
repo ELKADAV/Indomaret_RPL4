@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/RPL4_Indomaret/assets/css/indomaret.css">
 </head>
-<body>
-  <h1 style="align-text= center; text-transform= uppercase;">Tabel data kasir</h1>
 
-  <div class="table-container">
-<table class="styled-table">
-  <thead>
-    <tr>
-        <th>No_kasir</th>
-        <th>Nama_kasir</th>
-        <th>No_Telp</th>
-        <th>Alamat</th>
-    </tr>
-  </thead>
-  <tbody>
+<body>
     <?php
+    // Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
+    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
+    include ROOTPATH . '/includes/header.php';
+    ?>
+
+    <h2>Daftar Pengguna Sistem</h2>
+
+    <!-- Pembungkus Tabel Berfungsi untuk Responsivitas Mobile -->
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Kasir</th>
+                    <th>No Telepon</th>
+                    <th>Alamat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
                 include '../../config/config.php';
                 $query = "SELECT * FROM tabel_kasir";
                 $result = mysqli_query($connection, $query);
@@ -33,9 +43,10 @@
                     echo "</tr>";
                 }
                 ?>
-  </tbody>
-  </table>
-  </div>
+            </tbody>
+        </table>
+    </div>
 
 </body>
+
 </html>

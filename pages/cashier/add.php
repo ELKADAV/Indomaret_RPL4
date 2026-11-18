@@ -1,27 +1,19 @@
 <?php
-//medefinisikan ROOTHPATH sebagai path ke direktori root proyek
-define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
-
+// Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
+define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
 include ROOTPATH . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-</head>
-<body>
 <center style="margin-top: 50px;">
-<h1 style="color: black">Tambah Data Kasir</h1>
-
-<form action="/Indomaret_RPL4/transactions/process/cashier_process.php" method="post"></form>
-     <label for="">
-     <input type="text" name="nama_kasir" placeholder="Nama Kasir" require>
-     </label>
-     <input type="text" name="no_telp" placeholder="No Telp" require>
-     <input type="text" name="alamat" placeholder="Alamat" require>
-    <button onclick="window.location.href='../pages/cashier/list.php'">Pindah Halaman</button>
-
-     </body>
-</html>
+    <h1>Tambah Data Kasir</h1>
+    <form action="" method="post">
+        <div class="input-group">
+            <input type="text" name="nama_kasir" id="username" class="custom-input" placeholder="Masukkan nama Kasir..."
+                required>
+            <input type="text" name="no_telp" id="no_telp" class="custom-input"
+                placeholder="Masukkan nomor telepon Kasir..." required>
+            <input type="text" name="alamat" id="alamat" class="custom-input" placeholder="Masukkan alamat Kasir..."
+                required>
+        </div>
+        <button type="submit" class="btn btn-primary">Tambah Kasir</button>
+    </form>
+</center>

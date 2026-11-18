@@ -12,7 +12,6 @@
 <table class="styled-table">
   <thead>
     <tr>
-        <th>No_Donasi</th>
         <th>Nama_Donasi</th>
         <th>Harga_Donasi</th>
     </tr>
