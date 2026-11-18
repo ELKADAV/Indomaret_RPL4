@@ -5,7 +5,7 @@ include ROOTPATH . '/includes/header.php';
 ?>
 <center style="margin-top: 50px;">
     <h1>Tambah Data Kasir</h1>
-    <form action="" method="post">
+    <form action="" method="POST">
         <div class="input-group">
             <input type="text" name="nama_produk" id="username" class="custom-input" placeholder="Masukkan nama produk..."
                 required>

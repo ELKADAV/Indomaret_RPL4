@@ -13,9 +13,12 @@
     // Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
     define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
     include ROOTPATH . '/includes/header.php';
+    include ROOTPATH . '/config/config.php';
     ?>
 
     <h2>Daftar Pengguna Sistem</h2>
+
+    <a href="add.php" class="btn-add">+ Tambah Kasir</a>
 
     <!-- Pembungkus Tabel Berfungsi untuk Responsivitas Mobile -->
     <div class="table-container">
@@ -30,17 +33,27 @@
             </thead>
             <tbody>
                 <?php
-                include '../../config/config.php';
                 $query = "SELECT * FROM tabel_kasir";
                 $result = mysqli_query($connection, $query);
                 $no = 1;
                 while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
                     echo "<tr>";
                     echo "<td>" . $no++ . "</td>";
                     echo "<td>" . htmlspecialchars($row['nama_kasir']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['no_telp']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['alamat']) . "</td>";
                     echo "</tr>";
+                    <a href="edit.php?id=<?php echo $row['id_kasir']; ?>">Edit</a>
+
+                    <form action="process.php" method="POST" style="display:inline;">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id_kasir" value="<?php echo $row['id_kasir']; ?>">
+                                <button type="submit" onclick="return confirm('Yakin ingin menghapus data kasir ini?')">Hapus</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <?php
                 }
                 ?>
             </tbody>

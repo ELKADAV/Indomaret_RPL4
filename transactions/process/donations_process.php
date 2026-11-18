@@ -2,13 +2,12 @@
 
 include '../config/config.php';
 
-$id_donasi = $_POST["id_donasi"];
 $nama_donasi    = $_POST["nama_donasi"];
 $harga_donasi     = $_POST["harga_donasi"];
 
 if($_POST["action"] == "add"){
     // menambahkan data kasir ke table_kasir di database indomaret_RPL4
-    $hasil = mysqli_query($connection, "INSERT INTO tabel_donasi VALUES (NULL, '$id_donasi', '$nama_donasi', '$harga_donasi')");
+    $hasil = mysqli_query($connection, "INSERT INTO tabel_donasi VALUES ( '$nama_donasi', '$harga_donasi')");
 
     if(!$hasil){
         echo "

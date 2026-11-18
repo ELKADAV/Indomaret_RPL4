@@ -10,11 +10,10 @@
     <div class="nav-container>
         <a href="index.php">Dashboard</a>
         <a href="/Indomaret_RPL4/products/list.php">Products</a>
-        <a href="/Indomaret_RPL4/pages/cashiers/list.php">Cashiers</a>
-        <a href="/RPL4_indomaret/donations/list.php">Donations</a>
-        <a href="/RPL4_indomaret/transactions/list.php">Transactions</a>
+        <a href="/Indomaret_RPL4/pages/cashier/list.php">Cashiers</a>
+        <a href="/Indomaret_RPL4/donations/list.php">Donations</a>
+        <a href="/Indomaret_RPL4/transactions/list.php">Transactions</a>
         </div>
-
 
 </body>
 </html>
