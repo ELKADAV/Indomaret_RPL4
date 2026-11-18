@@ -3,6 +3,7 @@
 define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
 include ROOTPATH . '/includes/header.php';
 ?>
+
 <center style="margin-top: 50px;">
     <h1>Tambah Data Donasi</h1>
     <form action="" method="post">

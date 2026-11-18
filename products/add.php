@@ -1,6 +1,6 @@
 <?php
 // Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
-define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
+define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
 include ROOTPATH . '/includes/header.php';
 ?>
 <center style="margin-top: 50px;">
@@ -11,7 +11,7 @@ include ROOTPATH . '/includes/header.php';
                 required>
             <input type="text" name="harga" id="harga" class="custom-input"
                 placeholder="Masukkan harga..." required>
-            <input type="text" name="diskon" id="diskon" class="custom-input" placeholder="Masukkan alamat diskon..."
+            <input type="text" name="diskon" id="diskon" class="custom-input" placeholder="Masukkan diskon..."
                 required>
         </div>
         <button type="submit" class="btn btn-primary">Tambah Kasir</button>

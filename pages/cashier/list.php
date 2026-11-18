@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/RPL4_Indomaret/assets/css/indomaret.css">
+    <link rel="stylesheet" href="/Indomaret_RPL4/assets/css/indomaret.css">
 </head>
 
 <body>
     <?php
     // Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
-    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
+    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
     include ROOTPATH . '/includes/header.php';
     ?>
 
