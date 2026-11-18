@@ -38,12 +38,12 @@
                 $no = 1;
                 while ($row = mysqli_fetch_assoc($result)) {
                     ?>
-                    echo "<tr>";
-                    echo "<td>" . $no++ . "</td>";
-                    echo "<td>" . htmlspecialchars($row['nama_kasir']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['no_telp']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['alamat']) . "</td>";
-                    echo "</tr>";
+                 <tr>
+                    <td><?php echo $no++ ?></td>
+                    <td><?php echo htmlspecialchars($row['nama_kasir']); ?></td>
+                    <td><?php echo htmlspecialchars($row['no_telp']); ?></td>
+                    <td><?php echo htmlspecialchars($row['alamat']); ?></td>
+                    </tr>
                     <a href="edit.php?id=<?php echo $row['id_kasir']; ?>">Edit</a>
 
                     <form action="process.php" method="POST" style="display:inline;">
