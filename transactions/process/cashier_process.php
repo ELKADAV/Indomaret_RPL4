@@ -2,9 +2,6 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4/config/config.php';
 
-var_dump($_POST);
-die();
-
 $nama_kasir = $_POST["nama_kasir"];
 $no_telp    = $_POST["no_telp"];
 $alamat     = $_POST["alamat"];
