@@ -3,8 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     color: aliceblue;
-    border: 2px solid black;
-    border-radius: 3px;
 }
 .site-header {
     display: flex;
@@ -12,11 +10,18 @@
     align-items: center;
     height: 20px;
     background-color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 form {
     display: flex;
+    justify-content: center;
     flex-direction: column; /* Mengubah arah menjadi menurun */
-    gap: 10px;           
+    gap: 10px;      
+    background-color: bisque;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    border: 2px solid black;
+    border-radius: 5px;
+
 }
 input {
     color: black;
