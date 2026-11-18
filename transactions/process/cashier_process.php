@@ -1,6 +1,8 @@
 <?php
 
 include '../config/config.php';
+var_dump($_POST);
+die();
 
 $nama_kasir = $_POST["nama_kasir"];
 $no_telp    = $_POST["no_telp"];
