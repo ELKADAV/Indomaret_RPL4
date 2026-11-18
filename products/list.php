@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/RPL4_Indomaret/assets/css/indomaret.css">
 </head>
-<body>
-  <h1 style="align-text= center; text-transform= uppercase;">Tabel data kasir</h1>
 
-  <div class="table-container">
-<table class="styled-table">
-  <thead>
-    <tr>
-        <th>No_Produk</th>
-        <th>nama_Produk</th>
-        <th>harga</th>
-        <th>diskon</th>
-    </tr>
-  </thead>
-  <tbody>
+<body>
     <?php
-                include 'config/config.php';
+    // Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
+    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
+    include ROOTPATH . '/includes/header.php';
+    ?>
+
+    <h2>Daftar Pengguna Sistem</h2>
+
+    <!-- Pembungkus Tabel Berfungsi untuk Responsivitas Mobile -->
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Produk</th>
+                    <th>Harga Produk</th>
+                    <th>Diskon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                include '../../config/config.php';
                 $query = "SELECT * FROM tabel_produk";
                 $result = mysqli_query($connection, $query);
                 $no = 1;
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>";
                     echo "<td>" . $no++ . "</td>";
-                    echo "<td>" . htmlspecialchars($row['nama_produk']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['harga']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['diskon']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['nama_kasir']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['no_telp']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['alamat']) . "</td>";
                     echo "</tr>";
                 }
                 ?>
-  </tbody>
-  </table>
-  </div>
+            </tbody>
+        </table>
+    </div>
 
 </body>
+
 </html>

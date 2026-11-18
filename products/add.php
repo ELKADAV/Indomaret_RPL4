@@ -1,27 +1,19 @@
 <?php
-//medefinisikan ROOTHPATH sebagai path ke direktori root proyek
-define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
-
+// Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
+define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
 include ROOTPATH . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-</head>
-<body>
 <center style="margin-top: 50px;">
-<h1 style="color: black">Tambah Data Kasir</h1>
-
-<form action="/Indomaret_RPL4/transactions/process/products_process.php" method="post"></form>
-     <label for="">
-     <input type="text" name="nama_produk" placeholder="Nama Produk" require>
-     </label>
-     <input type="text" name="harga" placeholder="harga" require>
-     <input type="text" name="=diskon" placeholder="diskon" require>
-    <button onclick="window.location.href='../pages/products/list.php'">Pindah Halaman</button>
-
-     </body>
-</html>
+    <h1>Tambah Data Kasir</h1>
+    <form action="" method="post">
+        <div class="input-group">
+            <input type="text" name="nama_produk" id="username" class="custom-input" placeholder="Masukkan nama produk..."
+                required>
+            <input type="text" name="harga" id="harga" class="custom-input"
+                placeholder="Masukkan harga..." required>
+            <input type="text" name="diskon" id="diskon" class="custom-input" placeholder="Masukkan alamat diskon..."
+                required>
+        </div>
+        <button type="submit" class="btn btn-primary">Tambah Kasir</button>
+    </form>
+</center>

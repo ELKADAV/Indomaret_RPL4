@@ -1,26 +1,19 @@
 <?php
-//medefinisikan ROOTHPATH sebagai path ke direktori root proyek
-define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
-
+// Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
+define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
 include ROOTPATH . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-</head>
-<body>
 <center style="margin-top: 50px;">
-<h1 style="color: black">Tambah Data Donasi</h1>
-
-<form action="/Indomaret_RPL4/transactions/process/donations_process.php" method="post"></form>
-     <label for="">
-     <input type="text" name="nama_donasi" placeholder="Nama Donasi" require>
-     </label>
-     <input type="text" name="harga_donasi" placeholder="Harga Donasi" require>
-    <button onclick="window.location.href='../donations/list.php'">Pindah Halaman</button>
-
-     </body>
-</html>
+    <h1>Tambah Data Donasi</h1>
+    <form action="" method="post">
+        <div class="input-group">
+            <input type="text" name="id_donasi" id="id_donasi" class="custom-input" placeholder="Masukkan Nomor donasi..."
+                required>
+            <input type="text" name="nama_donasi" id="nama_donasi" class="custom-input"
+                placeholder="Masukkan nama donasi..." required>
+            <input type="text" name="harga_donasi" id="harga_donasi" class="custom-input" placeholder="Masukkan harga donasi..."
+                required>
+        </div>
+        <button type="submit" class="btn btn-primary">Tambah Donasi</button>
+    </form>
+</center>
