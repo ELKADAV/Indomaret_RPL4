@@ -1,6 +1,6 @@
 <?php
 // Mendefinisikan ROOTPATH sebagai path ke direktori root proyek
-define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/RPL4_Indomaret');
+define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4');
 include ROOTPATH . '/includes/header.php';
 ?>
 <center style="margin-top: 50px;">
