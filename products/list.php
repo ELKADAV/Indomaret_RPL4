@@ -13,14 +13,14 @@
   <thead>
     <tr>
         <th>No_Produk</th>
-        <th>Nama_Produkr</th>
-        <th>Harga</th>
-        <th>Diskon/th>
+        <th>nama_Produk</th>
+        <th>harga</th>
+        <th>diskon</th>
     </tr>
   </thead>
   <tbody>
     <?php
-                include '../../config/config.php';
+                include 'config.php';
                 $query = "SELECT * FROM tabel_produk";
                 $result = mysqli_query($connection, $query);
                 $no = 1;

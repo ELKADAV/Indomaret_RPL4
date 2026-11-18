@@ -8,10 +8,9 @@
 </head>
 <body>
     <div class="nav-container>
-    
         <a href="index.php">Dashboard</a>
         <a href="/Indomaret_RPL4/products/list.php">Products</a>
-        <a href="/RPL4_indomaret/pages/cashiers/list.php">Cashiers</a>
+        <a href="/Indomaret_RPL4/pages/cashiers/list.php">Cashiers</a>
         <a href="/RPL4_indomaret/donations/list.php">Donations</a>
         <a href="/RPL4_indomaret/transactions/list.php">Transactions</a>
         </div>
