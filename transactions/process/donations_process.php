@@ -1,13 +1,13 @@
 <?php
 
-include '../config/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Indomaret_RPL4/config/config.php';
 
-$nama_donasi    = $_POST["nama_donasi"];
-$harga_donasi     = $_POST["harga_donasi"];
+$nama_donasi = $_POST["nama_donasi"];
+$harga_donasi    = $_POST["harga_donasi"];
 
 if($_POST["action"] == "add"){
     // menambahkan data kasir ke table_kasir di database indomaret_RPL4
-    $hasil = mysqli_query($connection, "INSERT INTO tabel_donasi VALUES ( '$nama_donasi', '$harga_donasi')");
+    $hasil = mysqli_query($connection, "INSERT INTO tabel_donasi VALUES (NULL, '$nama_donasi', '$harga_donasi')");
 
     if(!$hasil){
         echo "
@@ -16,7 +16,7 @@ if($_POST["action"] == "add"){
         </script>";
     } else {
         echo "<script>
-        alert('Data kasir berhasil ditambahkan.');
+        alert('Data donasi berhasil ditambahkan.');
         window.location.href='../donations/list.php';
         </script>";
     }
@@ -50,7 +50,7 @@ if($_POST["action"] == "add"){
     } else {
         echo "<script>
         alert('Data kasir berhasil dihapus.');
-        window.location.href='../donations/list.php';
+        window.location.href='/Indomaret_RPL4/donations/list.php';
         </script>";
     }
 }
