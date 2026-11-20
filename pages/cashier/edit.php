@@ -10,7 +10,7 @@ $row = mysqli_fetch_assoc($query);
 
 <center style="margin-top: 50px;">
     <h1>Tambah Data Kasir</h1>
-    <form action="Indomaret_RPL4/transactions/process/cashier_process.php" method="POST">
+    <form action="../../transactions/process/cashier_process.php" method="POST">
     <!-- Penanda aksi edit dan ID data yang akan diubah -->
     <input type="hidden" name="action" value="edit">
     <input type="hidden" name="id_kasir" value="<?php echo htmlspecialchars($row['id_kasir']); ?>">
