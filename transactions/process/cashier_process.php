@@ -18,7 +18,7 @@ if($_POST["action"] == "add"){
     } else {
         echo "<script>
         alert('Data kasir berhasil ditambahkan.');
-        window.location.href='../pages/cashiers/list.php';
+        window.location.href='Indomaret_RPL4/pages/cashiers/list.php';
         </script>";
     }
 }else if($_POST["action"] == "edit"){
@@ -34,7 +34,7 @@ if($_POST["action"] == "add"){
     } else {
         echo "<script>
         alert('Data kasir berhasil diupdate.');
-        window.location.href='../pages/cashiers/list.php';
+        window.location.href='Indomaret_RPL4/pages/cashiers/list.php';
         </script>";
     }
 
