@@ -46,7 +46,7 @@
                     </tr>
                     <a href="edit.php?id=<?php echo $row['id_kasir']; ?>">Edit</a>
 
-                    <form action="../../transactions/process/cashier_process.php" method="POST" style="display:inline;">
+                    <form action="/Indomaret_RPL4/transactions/process/cashier_process.php" method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="delete">
                                 <input type="hidden" name="id_kasir" value="<?php echo $row['id_kasir']; ?>">
                                 <button type="submit" onclick="return confirm('Yakin ingin menghapus data kasir ini?')">Hapus</button>

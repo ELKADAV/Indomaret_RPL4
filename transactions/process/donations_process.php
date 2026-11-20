@@ -17,7 +17,7 @@ if($_POST["action"] == "add"){
     } else {
         echo "<script>
         alert('Data donasi berhasil ditambahkan.');
-        window.location.href='Indomaret_RPL4/donations/list.php';
+        window.location.href='/Indomaret_RPL4/donations/list.php';
         </script>";
     }
 }else if($_POST["action"] == "edit"){
