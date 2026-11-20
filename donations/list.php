@@ -44,7 +44,7 @@
                     </tr>
                     <a href="edit.php?id=<?php echo $row['id_donasi']; ?>">Edit</a>
 
-                    <form action="donations_process.php" method="POST" style="display:inline;">
+                    <form action="Indomaret_RPL4/transactions/process/donations_process.php" method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="delete">
                                 <input type="hidden" name="id_kasir" value="<?php echo $row['id_donasi']; ?>">
                                 <button type="submit" onclick="return confirm('Yakin ingin menghapus data donasi ini?')">Hapus</button>
